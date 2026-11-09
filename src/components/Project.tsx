@@ -13,6 +13,7 @@ import mock11 from '../assets/images/mock11.png';
 import mock12 from '../assets/images/mock12.png';
 import mock13 from '../assets/images/mock13.png';
 import mock14 from '../assets/images/mock14.png';
+import mock15 from '../assets/images/mock15.png';
 
 import '../assets/styles/Project.scss';
 
@@ -21,25 +22,54 @@ function Project() {
     <div className="projects-container" id="projects">
         <h1>Personal Projects</h1>
         <div className="projects-grid">
+            {/* TODO: replace YOUR-USERNAME and the repo names in each GitHub link */}
             <div className="project">
                 <a href="https://phillywaterr.netlify.app/" target="_blank" rel="noreferrer"><img src={mock11} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://phillywaterr.netlify.app/" target="_blank" rel="noreferrer"><h2>Two Street Water Ice Website</h2></a>
-                <p>Designed and developed a responsive marketing website for a fictional South Philadelphia water ice stand using HTML5 and CSS3, implementing flexbox-based layouts</p>
+                <p>Responsive marketing website for a Philiadelphia water ice stand</p>
+                <div className="project-footer">
+                    <p className="tech-stack">HTML · CSS · Flexbox</p>
+                    <div className="project-links">
+                        <a className="project-btn" href="https://phillywaterr.netlify.app/" target="_blank" rel="noreferrer">Live ↗</a>
+                        <a className="project-btn" href="https://github.com/lou7776/Philly-Water-Website/tree/main" target="_blank" rel="noreferrer">GitHub ↗</a>
+                    </div>
+                </div>
             </div>
             <div className="project">
                 <a href="https://jwliii.netlify.app/" target="_blank" rel="noreferrer"><img src={mock12} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://jwliii.netlify.app/" target="_blank" rel="noreferrer"><h2>JWLI Website</h2></a>
-                <p>Rebuilt a nonprofit organization's website from a static design mockup using semantic HTML5 and CSS3 flexbox, engineering a fully responsive layout that adapts across desktop, tablet, and mobile breakpoints.</p>
+                <p>Responsive website for a Japanese nonprofit</p>
+                <div className="project-footer">
+                    <p className="tech-stack">HTML · CSS · Flexbox</p>
+                    <div className="project-links">
+                        <a className="project-btn" href="https://jwliii.netlify.app/" target="_blank" rel="noreferrer">Live ↗</a>
+                        <a className="project-btn" href="https://github.com/lou7776/jwli-website" target="_blank" rel="noreferrer">GitHub ↗</a>
+                    </div>
+                </div>
             </div>
             <div className="project">
-                <a href="https://ground-level.netlify.app/" target="_blank" rel="noreferrer"><img src={mock13} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://ground-level.netlify.app/" target="_blank" rel="noreferrer"><h2>Ground Level Website </h2></a>
-                <p>Built a fully responsive multi-page website for Level Ground, a nonprofit MMA gym, from a provided wireframe using HTML, CSS, and Flexbox. The site features a custom navigation, hero section, and footer, optimized across desktop, tablet, and mobile breakpoints.</p>
+                <a href="villain-generator.onrender.com/" target="_blank" rel="noreferrer"><img src={mock15} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="villain-generator.onrender.com/" target="_blank" rel="noreferrer"><h2> Villain Name Generator Website </h2></a>
+                <p>A full stack quiz app where users answer five question and turns their answers into a custom superhero alias.</p>
+                <div className="project-footer">
+                    <p className="tech-stack">HTML · CSS · JavaScript · Node.js · Render</p>
+                    <div className="project-links">
+                        <a className="project-btn" href="https://villain-generator.onrender.com/" target="_blank" rel="noreferrer">Live ↗</a>
+                        <a className="project-btn" href="https://github.com/lou7776/Villain-generator" target="_blank" rel="noreferrer">GitHub ↗</a>
+                    </div>
+                </div>
             </div>
             <div className="project">
                 <a href="https://warrenstreetbarber.netlify.app/" target="_blank" rel="noreferrer"><img src={mock14} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://warrenstreetbarber.netlify.app/" target="_blank" rel="noreferrer"><h2>Warren Street Barbershop Website </h2></a>
-                <p>Designed and developed a barbershop website using HTML, CSS, and Flexbox, incorporating custom layouts.</p>
+                <p>Responsive website for a Barbershop</p>
+                <div className="project-footer">
+                    <p className="tech-stack">HTML · CSS · Flexbox</p>
+                    <div className="project-links">
+                        <a className="project-btn" href="https://warrenstreetbarber.netlify.app/" target="_blank" rel="noreferrer">Live ↗</a>
+                        <a className="project-btn" href="https://github.com/lou7776/warren-street-barbershop/tree/main" target="_blank" rel="noreferrer">GitHub ↗</a>
+                    </div>
+                </div>
             </div>
             {/* <div className="project">
                 <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><img src={mock06} className="zoom" alt="thumbnail" width="100%"/></a>

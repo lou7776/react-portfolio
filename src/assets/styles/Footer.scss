@@ -1,15 +1,43 @@
+$footer-accent: #4909c2;
 footer {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+ 
     svg {
         width: 1.1em !important;
         height: 1.1em !important;
         margin-right: 10px;
     }
-
+ 
+    // Each icon link becomes a round, easy-to-tap button
+    a:has(svg) {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        margin: 0 6px;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        transition: background-color 0.15s, transform 0.15s;
+ 
+        svg {
+            margin-right: 0;
+        }
+ 
+        &:hover,
+        &:focus-visible {
+            background-color: $footer-accent;
+            transform: translateY(-2px);
+        }
+    }
+ 
     p {
+        margin: 24px 0 0;
         font-size: 0.8em;
     }
 }
+ 

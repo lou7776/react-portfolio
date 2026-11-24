@@ -1,86 +1,80 @@
-# Developer Portfolio Template 🚀
+# React Portfolio
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+A personal developer portfolio built with React and TypeScript. It's a single-page site that shows my skills, projects, and career history, with smooth-scroll navigation and a dark/light mode toggle.
 
-## What is this?
-
-This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more.
-
-View the [Demo](https://yujisatojr.github.io/react-portfolio-template/).
-
-**This template is free to use, and no attribution is required.** You can fork or download this repository to customize it for your own use. Please don't forget to leave a ⭐ if you like this portfolio!
-
-![screenshot](./src/assets//images/screenshot.png)
+**Live Site**: https://YOUR-USERNAME.github.io/react-portfolio-template**
 
 ## Features
 
-✅ Open source (free to use, no attribution required)  
-✅ Responsive design & mobile-friendly  
-✅ Supports both dark and light modes  
-✅ Highly customizable multi-component layout  
-✅ Built with modern technologies (React, TypeScript, JavaScript, and SCSS)  
+- Single-page layout with smooth-scroll navigation
+- Dark and light mode toggle
+- Responsive design, with a slide-out menu on mobile
+- Expertise section with tech-stack chips
+- Project cards with thumbnails and links
+- Vertical timeline for career history
+- Fade-in animation when the page loads
 
-## Quick Setup
+## Built with
 
-1. Ensure you have [Node.js](https://nodejs.org/) installed. Check your installation by running:
+- [React](https://react.dev/) and [TypeScript](https://www.typescriptlang.org/)
+- [Material UI](https://mui.com/) for the navigation bar, buttons, and icons
+- Sass (SCSS) for styling
+- [Font Awesome](https://fontawesome.com/) icons
+- [react-vertical-timeline-component](https://github.com/stephane-monnot/react-vertical-timeline) for the career history
+- Create React App (`react-scripts`)
 
-    ```bash
-    node -v
-    ```
+## Getting started
 
-2. In the project directory, install dependencies:
+You'll need [Node.js](https://nodejs.org/) (LTS version) and npm.
 
-    ```bash
-    npm install
-    ```
+```bash
+# Clone the repo
+git clone https://github.com/YOUR-USERNAME/react-portfolio-template.git
 
-3. Start the development server:
+# Move into the project folder
+cd react-portfolio-template
 
-    ```bash
-    npm start
-    ```
+# Install dependencies
+npm install
 
-4. Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+# Start the development server
+npm start
+```
 
-5. Customize the template by navigating to the `/src/components` directory. Modify texts, pictures, and other information as needed.
+The site opens at [http://localhost:3000](http://localhost:3000) and reloads automatically when you save a file.
 
-The page will reload if you make edits, and you will see any lint errors in the console.
+## Project structure
 
-If you are interested in creating a mockup image like the ones from the personal projects section, I recommend [Genmoo](https://gemoo.com/tools/browser-mockup-generator/). This website lets you generate sleek looking browser mockups for free.
+```
+src/
+├── components/     Page sections: Main, Expertise, Project, Timeline, Navigation, Footer
+├── assets/
+│   ├── images/     Project thumbnails and photos
+│   └── styles/     One SCSS file per component
+└── App.tsx         Page layout and dark/light mode
+```
+
+## Customizing
+
+- **Content:** edit the files in `src/components` (name, bio, skills, projects, career history).
+- **Images:** replace the files in `src/assets/images`.
+- **Menu links:** edit the `navItems` list in `src/components/Navigation.tsx`.
+- **Section order:** rearrange the components in `src/App.tsx`.
 
 ## Deployment
 
-You can choose your preferred service (e.g., [Netlify](https://www.netlify.com/), [Render](https://render.com/), [Heroku](https://www.heroku.com/)) for deployment. One of the easiest ways to host this portfolio is using GitHub Pages. Follow the instructions below for a production deploy.
+The site is deployed with GitHub Pages.
 
-1. **Set Up GitHub Repository**
+1. In `package.json`, set `"homepage"` to your own URL: `https://YOUR-USERNAME.github.io/react-portfolio-template`
+2. If it isn't installed yet, add the deploy tool: `npm install --save-dev gh-pages`
+3. Build and publish:
 
-    Create a new repository on GitHub for your portfolio app.
+```bash
+npm run deploy
+```
 
-2. **Configure `package.json`**
+Then, in your GitHub repo, go to **Settings → Pages** and make sure the site is served from the `gh-pages` branch.
 
-    Edit the following properties in your `package.json` file:
+## Credits
 
-    ```json
-    {
-        "homepage": "https://yourusername.github.io/your-repo-name",
-        "scripts": {
-            "predeploy": "npm run build",
-            "deploy": "gh-pages -d build",
-            ...
-        }
-    }
-    ```
-
-    Replace `yourusername` with your GitHub username and `your-repo-name` with the name of your GitHub repository.
-
-3. **Deploy to GitHub Pages**
-
-    Run the following command to deploy your app:
-
-    ```bash
-    npm run deploy
-    ```
-
-4. **Access Your Deployed App**
-
-    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
+Based on [react-portfolio-template](https://github.com/yujisatojr/react-portfolio-template) by Yuji Sato, released under the MIT License.

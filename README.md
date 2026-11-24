@@ -2,7 +2,7 @@
 
 A personal developer portfolio built with React and TypeScript. It's a single-page site that shows my skills, projects, and career history, with smooth-scroll navigation and a dark/light mode toggle.
 
-**Live Site**: https://YOUR-USERNAME.github.io/react-portfolio-template**
+**Live Site**: https://luciousprofolio.vercel.app/
 
 ## Features
 

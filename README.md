@@ -4,6 +4,8 @@ A personal developer portfolio built with React and TypeScript. It's a single-pa
 
 **Live Site**: https://luciousprofolio.vercel.app/
 
+<img width="1325" height="679" alt="Screenshot 2026-11-23 at 9 09 29 PM" src="https://github.com/user-attachments/assets/922b2bc6-3fe3-481b-a06d-e1b6741651c8" />
+
 ## Features
 
 - Single-page layout with smooth-scroll navigation
